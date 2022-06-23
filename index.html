@@ -6,9 +6,11 @@
 
         import {agregar} from './lib/index.js';
         import {insertar_al_final} from './lib/index.js';
+        import {insertar_antes_x} from './lib/index.js';
       
         window.agregar=agregar;
         window.insertar_al_final=insertar_al_final;
+        window.insertar_antes_x=insertar_antes_x;
 
     </script>
 
@@ -20,6 +22,7 @@
 <div id="salida"></div>
     <button onclick="agregar()">insertar al inicio</button>
     <button onclick="insertar_al_final()">insertar al final</button>
+    <button onclick="insertar_antes_x()">insertar ante de X</button>
 </body>
 
 </html>
