@@ -2,6 +2,9 @@
 
 <head>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <!-- JS dependencies -->
@@ -33,13 +36,38 @@
 </head>
 
 <body>
+
+<div style="margin: 10px">   
+    <canvas id="tutorial" height="100"></canvas>
+</div>
+
+<div style="margin: 10px">
+
+    <div class="container">
+        <div class="row text-center">
+          <div class="col-xs-12 col-sm-12 col-md-6 ">
+                <button onclick="insertar_al_inicio()">insertar al inicio</button>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6">
+                <button onclick="insertar_al_final()">insertar al final</button>
+          </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                 <button onclick="insertar_antes_x()">insertar ante de X</button>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <button onclick="elimina_inicio()">elimina inicio</button>
+            </div>
+        </div>
+    </div>  
+
+</div>
+ 
     
-<canvas id="tutorial" width="700" height="150"></canvas>
-<div id="salida"></div>
-    <button onclick="insertar_al_inicio()">insertar al inicio</button>
-    <button onclick="insertar_al_final()">insertar al final</button>
-    <button onclick="insertar_antes_x()">insertar ante de X</button>
-    <button onclick="elimina_inicio()">elimina inicio</button>
+   
 </body>
+
+
 
 </html>
