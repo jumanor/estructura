@@ -2,6 +2,7 @@ canvas { border: 1px solid black;height:200px;min-width:100%;border-radius: 5px;
 .container button {
     width:150px;
     margin:5px;
+    border-radius: 5px;
 }
 /*
 div[class="row"] {
