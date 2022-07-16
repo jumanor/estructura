@@ -31,9 +31,10 @@
         window.insertar_antes_x=insertar_antes_x;
         window.elimina_inicio=elimina_inicio;
 
-        import {clickListaSimplementeEnlazada,clickListaCirsularSimplementeEnlazada} from './lib/index.js';
+        import {clickListaSimplementeEnlazada,clickListaCirsularSimplementeEnlazada,clickListaDoblementeEnlazada} from './lib/index.js';
         window.clickListaSimplementeEnlazada=clickListaSimplementeEnlazada;
         window.clickListaCirsularSimplementeEnlazada=clickListaCirsularSimplementeEnlazada;
+        window.clickListaDoblementeEnlazada=clickListaDoblementeEnlazada;
 
     </script>
 
@@ -49,11 +50,14 @@
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-xs-12 col-sm-12 col-md-6 buttonleftmenu">
+            <div class="col-xs-12 col-sm-12 col-md-4 buttonleftmenu">
                     <button onclick="clickListaSimplementeEnlazada()">LISTA SIMPLEMENTE LIGADA</button>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 buttonrightmenu">
+            <div class="col-xs-12 col-sm-12 col-md-4 md-auto">
                     <button onclick="clickListaCirsularSimplementeEnlazada()">LISTA CIRCULAR SIMPLEMENTE LIGADA</button>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 buttonrightmenu">
+                    <button onclick="clickListaDoblementeEnlazada()">LISTA DOBLEMENTE LIGADA</button>
             </div>
         </div>
     </div>
@@ -97,6 +101,19 @@
 <div id="vista2" style="display:none">
     <div style="margin: 10px">   
         <canvas id="tutorial2"></canvas>
+    </div>
+
+    <div  class="container">
+        <div class="row text-center">
+            <div class="col">
+                <button onclick="window.history.back()">MENU</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="vista3" style="display:none">
+    <div style="margin: 10px">   
+        <canvas id="tutorial3"></canvas>
     </div>
 
     <div  class="container">

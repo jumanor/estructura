@@ -22,6 +22,9 @@ canvas { border: 1px solid black;height:200px;width:100%;border-radius: 5px;padd
     .buttonrightmenu{
         text-align: left;
     }
+    .buttoncentermenu{
+        text-align: center;
+    }
 }
 /*
 div[class="row"] {
