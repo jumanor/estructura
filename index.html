@@ -21,50 +21,92 @@
     <link rel="stylesheet" href="lib/style.css">
     <script type="module">
 
-        import {insertar_al_inicio} from './lib/index.js';
-        import {insertar_al_final} from './lib/index.js';
-        import {insertar_antes_x} from './lib/index.js';
-        import {elimina_inicio} from './lib/index.js';
+        import {insertar_al_inicio} from './lib/lstSimpLig/index.js';
+        import {insertar_al_final} from './lib/lstSimpLig/index.js';
+        import {insertar_antes_x} from './lib/lstSimpLig/index.js';
+        import {elimina_inicio} from './lib/lstSimpLig/index.js';
       
         window.insertar_al_inicio=insertar_al_inicio;
         window.insertar_al_final=insertar_al_final;
         window.insertar_antes_x=insertar_antes_x;
         window.elimina_inicio=elimina_inicio;
 
+        import {clickListaSimplementeEnlazada,clickListaCirsularSimplementeEnlazada} from './lib/index.js';
+        window.clickListaSimplementeEnlazada=clickListaSimplementeEnlazada;
+        window.clickListaCirsularSimplementeEnlazada=clickListaCirsularSimplementeEnlazada;
+
     </script>
 
 </head>
 
 <body>
-
-<div style="margin: 10px">   
-    <canvas id="tutorial"></canvas>
-</div>
-
-<div style="margin: 10px">
-
-    <div class="container">
-        <div class="row text-center">
-          <div class="col-xs-12 col-sm-12 col-md-6 ">
-                <button onclick="insertar_al_inicio()">INSERTAR AL INICIO</button>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6">
-                <button onclick="insertar_al_final()">INSERTAR AL FINAL</button>
-          </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-xs-12 col-sm-12 col-md-6">
-                 <button onclick="insertar_antes_x()">INSERTAR ANTES DE X</button>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6">
-                <button onclick="elimina_inicio()">ELIMINAR AL INICIO</button>
-            </div>
-        </div>
-    </div>  
-
-</div>
- 
+<div id="principal">
     
+    <div class="container">
+        <div class="row text-center" style="margin-bottom: 50px;">
+            <div class="col">
+                <h1>ALGORITMOS DE OSVALDO CAIRO</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-6 buttonleftmenu">
+                    <button onclick="clickListaSimplementeEnlazada()">LISTA SIMPLEMENTE LIGADA</button>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 buttonrightmenu">
+                    <button onclick="clickListaCirsularSimplementeEnlazada()">LISTA CIRCULAR SIMPLEMENTE LIGADA</button>
+            </div>
+        </div>
+    </div>
+
+   
+</div>
+<div id="vista1" style="display: none">
+
+    <div style="margin: 10px">   
+        <canvas id="tutorial"></canvas>
+    </div>
+
+    <div style="margin: 10px">
+
+        <div class="container">
+            <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-6 ">
+                    <button onclick="insertar_al_inicio()">INSERTAR AL INICIO</button>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="insertar_al_final()">INSERTAR AL FINAL</button>
+            </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="insertar_antes_x()">INSERTAR ANTES DE X</button>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="elimina_inicio()">ELIMINAR AL INICIO</button>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <button onclick="window.history.back()">MENU</button>
+                </div>
+            </div>
+        </div>  
+
+    </div>
+</div> 
+<div id="vista2" style="display:none">
+    <div style="margin: 10px">   
+        <canvas id="tutorial2"></canvas>
+    </div>
+
+    <div  class="container">
+        <div class="row text-center">
+            <div class="col">
+                <button onclick="window.history.back()">MENU</button>
+            </div>
+        </div>
+    </div>
+</div>
    
 </body>
 
