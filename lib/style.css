@@ -4,6 +4,28 @@ canvas { border: 1px solid black;height:200px;width:100%;border-radius: 5px;padd
     margin:5px;
     border-radius: 5px;
 }
+#principal button{
+    width:150px;
+    margin:5px;
+    border-radius: 5px;
+}
+#principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+@media (min-width: 768px){ 
+    .buttonleftmenu{
+        text-align: right;
+    }
+    .buttonrightmenu{
+        text-align: left;
+    }
+    .buttoncentermenu{
+        text-align: center;
+    }
+}
 /*
 div[class="row"] {
     outline: 1px dotted rgba(255, 0, 0, 1);
