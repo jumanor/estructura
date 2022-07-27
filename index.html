@@ -36,6 +36,10 @@
         window.clickListaCirsularSimplementeEnlazada=clickListaCirsularSimplementeEnlazada;
         window.clickListaDoblementeEnlazada=clickListaDoblementeEnlazada;
 
+        //LISTA DOBLEMENTE LIGADA
+        import {insertar_al_inicio as insertar_al_inicio_lstDobLig} from './lib/lstDobLig/index.js';
+        window.insertar_al_inicio_lstDobLig=insertar_al_inicio_lstDobLig;
+
     </script>
 
 </head>
@@ -110,6 +114,7 @@
             </div>
         </div>
     </div>
+
 </div>
 <div id="vista3" style="display:none">
     <div style="margin: 10px">   
@@ -123,6 +128,9 @@
             </div>
         </div>
     </div>
+
+    <button onclick="insertar_al_inicio_lstDobLig()">insertar al inicio</button>
+
 </div>
    
 </body>
