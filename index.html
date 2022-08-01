@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="lib/style.css">
     <script type="module">
 
+        //LISTA SIMPLEMENTE LIGADA
         import {insertar_al_inicio} from './lib/lstSimpLig/index.js';
         import {insertar_al_final} from './lib/lstSimpLig/index.js';
         import {insertar_antes_x} from './lib/lstSimpLig/index.js';
@@ -31,14 +32,16 @@
         window.insertar_antes_x=insertar_antes_x;
         window.elimina_inicio=elimina_inicio;
 
+        //LISTA DOBLEMENTE LIGADA
+        import {insertar_al_inicio as insertar_al_inicio_lstDobLig} from './lib/lstDobLig/index.js';
+        window.insertar_al_inicio_lstDobLig=insertar_al_inicio_lstDobLig;
+
+
+        //EVENTOS DE MENU PARA MANEJAR HISTORIAL
         import {clickListaSimplementeEnlazada,clickListaCirsularSimplementeEnlazada,clickListaDoblementeEnlazada} from './lib/index.js';
         window.clickListaSimplementeEnlazada=clickListaSimplementeEnlazada;
         window.clickListaCirsularSimplementeEnlazada=clickListaCirsularSimplementeEnlazada;
         window.clickListaDoblementeEnlazada=clickListaDoblementeEnlazada;
-
-        //LISTA DOBLEMENTE LIGADA
-        import {insertar_al_inicio as insertar_al_inicio_lstDobLig} from './lib/lstDobLig/index.js';
-        window.insertar_al_inicio_lstDobLig=insertar_al_inicio_lstDobLig;
 
     </script>
 
@@ -69,6 +72,15 @@
    
 </div>
 <div id="vista1" style="display: none">
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col" style="margin-top:20px">
+                <h4>LISTA SIMPLEMENTE LIGADA</h4> 
+            </div>
+        </div>
+    </div>
+
 
     <div style="margin: 10px">   
         <canvas id="tutorial"></canvas>
@@ -103,11 +115,36 @@
     </div>
 </div> 
 <div id="vista2" style="display:none">
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col" style="margin-top:20px">
+                <h4>LISTA CIRCULAR SIMPLEMENTE LIGADA</h4> 
+            </div>
+        </div>
+    </div>
+
     <div style="margin: 10px">   
         <canvas id="tutorial2"></canvas>
     </div>
 
     <div  class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-6 ">
+                    <button onclick="">INSERTAR AL INICIO</button>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="">INSERTAR AL FINAL</button>
+            </div>
+        </div>
+        <div class="row text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="">INSERTAR ANTES DE X</button>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="">ELIMINAR AL INICIO</button>
+                </div>
+        </div>
         <div class="row text-center">
             <div class="col">
                 <button onclick="window.history.back()">MENU</button>
@@ -117,19 +154,42 @@
 
 </div>
 <div id="vista3" style="display:none">
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col" style="margin-top:20px">
+                <h4>LISTA DOBLEMENTE LIGADA</h4> 
+            </div>
+        </div>
+    </div>
+
     <div style="margin: 10px">   
         <canvas id="tutorial3"></canvas>
     </div>
 
     <div  class="container">
         <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-6 ">
+                    <button onclick="insertar_al_inicio_lstDobLig()">INSERTAR AL INICIO</button>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="">INSERTAR AL FINAL</button>
+            </div>
+        </div>
+        <div class="row text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="">INSERTAR ANTES DE X</button>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="">ELIMINAR AL INICIO</button>
+                </div>
+        </div>
+        <div class="row text-center">
             <div class="col">
                 <button onclick="window.history.back()">MENU</button>
             </div>
         </div>
     </div>
-
-    <button onclick="insertar_al_inicio_lstDobLig()">insertar al inicio</button>
 
 </div>
    
