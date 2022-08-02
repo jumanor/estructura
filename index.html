@@ -35,8 +35,10 @@
         //LISTA DOBLEMENTE LIGADA
         import {insertar_al_inicio as insertar_al_inicio_lstDobLig} from './lib/lstDobLig/index.js';
         import {insertar_antes_x as insertar_antes_x_lstDobLig} from './lib/lstDobLig/index.js';
+        import {elimina_inicio as elimina_inicio_lstDobLig} from './lib/lstDobLig/index.js';
         window.insertar_al_inicio_lstDobLig=insertar_al_inicio_lstDobLig;
         window.insertar_antes_x_lstDobLig=insertar_antes_x_lstDobLig;
+        window.elimina_inicio_lstDobLig=elimina_inicio_lstDobLig;
 
 
         //EVENTOS DE MENU PARA MANEJAR HISTORIAL
@@ -183,7 +185,7 @@
                     <button onclick="insertar_antes_x_lstDobLig()">INSERTAR ANTES DE X</button>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
-                    <button onclick="">ELIMINAR AL INICIO</button>
+                    <button onclick="elimina_inicio_lstDobLig()">ELIMINAR AL INICIO</button>
                 </div>
         </div>
         <div class="row text-center">
