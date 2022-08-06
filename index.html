@@ -32,6 +32,10 @@
         window.insertar_antes_x=insertar_antes_x;
         window.elimina_inicio=elimina_inicio;
 
+        //LISTA CIRCULAR SIMPLEMENTE LIGADA
+        import {insertar_al_inicio as insertar_al_inicio_lstCirSimpLig} from './lib/lstCirSimpLig/index.js';
+        window.insertar_al_inicio_lstCirSimpLig=insertar_al_inicio_lstCirSimpLig;
+
         //LISTA DOBLEMENTE LIGADA
         import {insertar_al_inicio as insertar_al_inicio_lstDobLig} from './lib/lstDobLig/index.js';
         import {insertar_antes_x as insertar_antes_x_lstDobLig} from './lib/lstDobLig/index.js';
@@ -141,7 +145,7 @@
     <div  class="container">
         <div class="row text-center">
             <div class="col-xs-12 col-sm-12 col-md-6 ">
-                    <button onclick="">INSERTAR AL INICIO</button>
+                    <button onclick="insertar_al_inicio_lstCirSimpLig();">INSERTAR AL INICIO</button>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6">
                     <button onclick="">INSERTAR AL FINAL</button>
